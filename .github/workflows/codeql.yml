@@ -25,6 +25,8 @@ jobs:
       matrix:
         include:
         - language: java-kotlin
+          build-mode: none # This mode only analyzes Java. Set this to 'autobuild' or 'manual' to analyze Kotlin too.
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -34,6 +36,7 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: ${{ matrix.language }}
+        build-mode: ${{ matrix.build-mode }}
 
     - name: Run a build and generate the dependency graph which will be submitted post-job
       run: ./gradlew clean build
