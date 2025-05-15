@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.neiljbrown.java11.HttpClientTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-05-15T09:47:54" hostname="SE-C02ZMXQ8MD6N" time="3.607">
+  <properties/>
+  <testcase name="testPostRequestWhenBodyPublisherOfString()" classname="com.neiljbrown.java11.HttpClientTest" time="2.265"/>
+  <testcase name="testResponseTimeout()" classname="com.neiljbrown.java11.HttpClientTest" time="0.036"/>
+  <testcase name="testPostRequestWhenBodyPublisherOfInputStream()" classname="com.neiljbrown.java11.HttpClientTest" time="0.868"/>
+  <testcase name="testAsyncGetRequest()" classname="com.neiljbrown.java11.HttpClientTest" time="0.237"/>
+  <testcase name="testGetRequest()" classname="com.neiljbrown.java11.HttpClientTest" time="0.201"/>
+  <system-out><![CDATA[testAsyncGetRequest() - Received response body [<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="sv"...].
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
