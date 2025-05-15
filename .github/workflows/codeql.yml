@@ -40,3 +40,7 @@ jobs:
       uses: github/codeql-action/analyze@v3
       with:
         category: "/language:${{matrix.language}}"
+
+    - uses: gradle/actions/dependency-submission@v4
+      with:
+        dependency-graph: 'generate-and-submit'
